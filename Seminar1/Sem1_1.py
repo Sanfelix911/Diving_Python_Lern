@@ -46,15 +46,29 @@
 # print(rez)
      
 # Задача 8
-SPACE = ' '
-STAR = '*'
-ONE = 1
-rows = int(input('Введите количество рядов  '))
-spaces = rows - ONE
-stars = ONE
+# SPACE = ' '
+# STAR = '*'
+# ONE = 1
+# rows = int(input('Введите количество рядов  '))
+# spaces = rows - ONE
+# stars = ONE
 
-for i in range(rows):
-    print(spaces * SPACE + stars * STAR)
-    spaces -= ONE
-    stars += 2 * ONE
+# for i in range(rows):
+#     print(spaces * SPACE + stars * STAR)
+#     spaces -= ONE
+#     stars += ONE + ONE
+
+# Задача 9
+
+LOW_LIMIT = 2
+UP_LIMIT = 10
+COLUMN = 4
+ONE = 1
+
+for i_main in (LOW_LIMIT, LOW_LIMIT+COLUMN):
+    for s_num in range(LOW_LIMIT, UP_LIMIT+ONE):
+        for f_num in range(i_main, i_main + COLUMN):
+            print(f'{f_num:>2} X {s_num:>2} = {f_num*s_num:>2}' , end='\t')
+        print()
+    print()       
 
