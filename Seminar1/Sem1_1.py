@@ -43,4 +43,18 @@
 #     t_nam = nam % TEN
 #     mirror = t_nam*HUNDRED + s_nam * TEN + f_nam
 #     rez = f'Число {nam} - трёхзначное, её зеракло - {mirror}'
-# print(rez)     
+# print(rez)
+     
+# Задача 8
+SPACE = ' '
+STAR = '*'
+ONE = 1
+rows = int(input('Введите количество рядов  '))
+spaces = rows - ONE
+stars = ONE
+
+for i in range(rows):
+    print(spaces * SPACE + stars * STAR)
+    spaces -= ONE
+    stars += 2 * ONE
+
