@@ -22,7 +22,7 @@
 #     print(f'{nn}. Значение {value}.\nАдрес в памяти {id(value)}.\tРазмер в памяти {sys.getsizeof(value)}).'
 #           f'\t Хэш объекта {hash(value)}.\t{check_int}{check_str}')
 
-# #Задание3
+# #Задание 3
 
 # BIN = 2
 # OCT = 8
@@ -36,4 +36,17 @@
 #         result = str(test_num % BIN) + result
 #         test_num //= div
 #     print(f'For {div=} {result=}')
-# print(f'Двоичное число {bin(num)}, Восьмеричное число {oct(num)}')        
+# print(f'Двоичное число {bin(num)}, Восьмеричное число {oct(num)}')
+# 
+# # Задание 4
+# import math
+# import decimal
+
+# decimal.getcontext().prec = 50
+# PI = decimal.Decimal(math.pi)
+# d = decimal.Decimal(input('Введите диаметр - '))
+# while d > 1000:
+#     print('Некорректный ввод')
+#     d = decimal.Decimal(input('Введите диаметр - '))
+# print(f'Площадь круга = {PI * (d/2)**2}')
+# print(f'Длина окружности = {PI * d}')
