@@ -26,10 +26,22 @@
 
 # Задание 3
 
-data = (42, 73, 3.14, 'Hello world', None, 'Text', 100500.2, False)
-my_dict = {}
+# data = (42, 73, 3.14, 'Hello world', None, 'Text', 100500.2, False)
+# my_dict = {}
 
-for item in data:
-    key = my_dict.setdefault(type(item),[])
-    key.append(item)
-print(my_dict)
+# for item in data:
+#     key = my_dict.setdefault(type(item),[])
+#     key.append(item)
+# print(my_dict)
+
+# Задание 4
+
+# COUNT = 2
+# data = [42, 73 , 5, 42, 42, 2, 3, 7, 73, 42]
+
+# for item in set(data):
+#     if data.count(item) == COUNT:
+#         for _ in range(COUNT):
+#             data.remove(item)
+# print(data)
+
