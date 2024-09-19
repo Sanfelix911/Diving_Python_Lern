@@ -23,3 +23,13 @@
 # else:
 #     new_data = data.upper()
 # print([new_data])
+
+# Задание 3
+
+data = (42, 73, 3.14, 'Hello world', None, 'Text', 100500.2, False)
+my_dict = {}
+
+for item in data:
+    key = my_dict.setdefault(type(item),[])
+    key.append(item)
+print(my_dict)
