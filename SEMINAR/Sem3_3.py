@@ -82,3 +82,40 @@
 #     else:
 #         my_dict2[char] +=1
 # print(my_dict2)
+
+# Задание 8
+
+hike = {
+    'Aaz': ("спички", "спальник", "дрова", "топор"),
+    'Skeeve': ("спальник", "спички", "вода", "еда"),
+    'Tananda': ("вода", "спички", "косметичка", "топор")
+}
+all_things = set()
+
+for things in hike.values():
+    all_things.update(things)
+print(f'Полный список вещей {all_things}')
+
+unique_things = {}
+for master_friend, master_things in hike.items():
+    for slave_friend, slave_things in hike.items():
+        if master_friend != slave_friend:
+            if master_friend not in unique_things:
+                unique_things[master_friend] = set(master_things) - set(slave_things)
+            else:
+                unique_things[master_friend] -= set(slave_things)
+print(f'Список уникальных вещей: {unique_things}')
+
+double_things = set(all_things)
+for things in unique_things.values():
+    double_things -= things
+print(f'Дубликаты {double_things}')
+
+for friend, things in hike.items():
+    print(f'У {friend} отсутствует {double_things - set(things)}')
+    print(f'Второй вариант {friend}  {(set(things) ^ double_things) - set(unique_things[friend])}')
+
+
+
+
+
