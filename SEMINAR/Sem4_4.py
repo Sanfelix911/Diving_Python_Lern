@@ -84,3 +84,25 @@
 #     "Хвосты": [-500, 123, 52, 45, 92],
 # }
 # print(fin_ekonom(data))
+
+# Задача 8
+
+# def value_ch():
+#     g_names = globals()
+#     new_dict = {}
+#     for key,value in g_names.items():
+#         if key.endswith('s') and key != 's':
+#             new_dict[key[:-1]] = value
+#             g_names[key] = None
+#     for key,value in new_dict.items():
+#         g_names[key] = value
+
+
+
+# dates = [42, -73, 12, -15, 2]
+# s = 'Hello world'
+# names = ('Dom', 'Cyar', 'Krep')
+# sx = 42
+
+# value_ch()
+# print(globals())
