@@ -28,3 +28,19 @@
 #     return result
 
 # print(range_uncode('1 10'))
+
+# # Задача 4
+
+# def sorting_list(mi_list: list[int]):
+#     count = 1
+#     while count < len(mi_list):
+#         for i in range(len(mi_list)-count):
+#             if mi_list[i] > mi_list[i+1]:
+#                 mi_list[i], mi_list[i+1] = mi_list[i+1],mi_list[i]
+#         count += 1        
+
+# data_list = [8, 15, 42, 4, 23, 16]
+# sorting_list(data_list)
+# print(data_list)
+
+# Задача 5
