@@ -44,3 +44,17 @@
 # print(data_list)
 
 # Задача 5
+
+# import decimal
+# def list_of_bonus(names: list[str], bets: list[int], rewords: list[str]) ->dict[str, decimal.Decimal]:
+#     result = {}
+#     #print(*zip(names,bets,rewords))
+#     for names, bets, rewords in zip(names,bets,rewords):
+#         result[names] = bets * decimal.Decimal(rewords[:-1])/100
+    
+#     return result
+
+# n = ['Alex', 'Ben', 'Mio']
+# b = [20000, 10000, 30000]
+# r = ['5.5%', '10.25%', '3.14%']
+# print(list_of_bonus(n, b, r))
