@@ -49,8 +49,8 @@
 # def list_of_bonus(names: list[str], bets: list[int], rewords: list[str]) ->dict[str, decimal.Decimal]:
 #     result = {}
 #     #print(*zip(names,bets,rewords))
-#     for names, bets, rewords in zip(names,bets,rewords):
-#         result[names] = bets * decimal.Decimal(rewords[:-1])/100
+#     for name, bet, reword in zip(names,bets,rewords):
+#         result[name] = bet * decimal.Decimal(reword[:-1])/100
     
 #     return result
 
@@ -58,3 +58,16 @@
 # b = [20000, 10000, 30000]
 # r = ['5.5%', '10.25%', '3.14%']
 # print(list_of_bonus(n, b, r))
+
+# Задача 6
+
+# def sum_index(my_list: list[int|float], i_1, i_2: int) -> int | float:
+#     i_max = max(i_1,i_2)
+#     i_max = i_max if i_max < len(my_list) else len(my_list)
+#     i_min = min(i_1,i_2)
+#     i_min = i_min if i_min >= 0 else 0
+
+#     return sum(my_list[i_min : i_max+1])
+
+# numbers = [4, 8 , 15, 16, 23, 42]
+# print(sum_index(numbers,i_1=2, i_2=10))
