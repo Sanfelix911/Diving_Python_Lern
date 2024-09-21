@@ -37,7 +37,7 @@
 #         for i in range(len(mi_list)-count):
 #             if mi_list[i] > mi_list[i+1]:
 #                 mi_list[i], mi_list[i+1] = mi_list[i+1],mi_list[i]
-#         count += 1        
+#         count += 1
 
 # data_list = [8, 15, 42, 4, 23, 16]
 # sorting_list(data_list)
@@ -51,7 +51,7 @@
 #     #print(*zip(names,bets,rewords))
 #     for name, bet, reword in zip(names,bets,rewords):
 #         result[name] = bet * decimal.Decimal(reword[:-1])/100
-    
+
 #     return result
 
 # n = ['Alex', 'Ben', 'Mio']
@@ -71,3 +71,16 @@
 
 # numbers = [4, 8 , 15, 16, 23, 42]
 # print(sum_index(numbers,i_1=2, i_2=10))
+
+# Задача 7
+
+# def fin_ekonom(my_dict: dict[str, list[int | float]]) -> bool:
+#     return all(map(lambda x: sum(x) > 0, my_dict.values()))
+
+
+# data = {
+#     "Poгa": [42, -73, 12, 85, -15, 2],
+#     "Копыта": [45, 25, -100, 22, 1],
+#     "Хвосты": [-500, 123, 52, 45, 92],
+# }
+# print(fin_ekonom(data))
