@@ -20,6 +20,12 @@
 # for  _ in range(COUNT):
 #     print(*next(my_dict_itter))
 
+# # Задание 4
+
+# gen_nums = (num for num in range(0,100, 2) if (num % 10)+(num // 10) !=8 )
+# print(*gen_nums, sep='\n')
+
+
 
 
 
