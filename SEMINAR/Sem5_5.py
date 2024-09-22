@@ -6,6 +6,20 @@
 
 # Задание2
 
-text = 'Создайте из строки словарь, где ключ - буква, а значение - код буквы.'
-my_dict = {symbol:ord(symbol) for symbol in  set(text)}
-print(my_dict)
+# text = 'Создайте из строки словарь, где ключ - буква, а значение - код буквы.'
+# my_dict = {symbol:ord(symbol) for symbol in  set(text)}
+# print(my_dict)
+
+
+# Задание 3
+# COUNT = 5
+# text = 'Создайте из строки словарь, где ключ - буква, а значение - код буквы.'
+# my_dict = {symbol:ord(symbol) for symbol in  set(text)}
+# my_dict_itter = iter(my_dict.items())
+
+# for  _ in range(COUNT):
+#     print(*next(my_dict_itter))
+
+
+
+
