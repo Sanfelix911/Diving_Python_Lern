@@ -25,7 +25,25 @@
 # gen_nums = (num for num in range(0,100, 2) if (num % 10)+(num // 10) !=8 )
 # print(*gen_nums, sep='\n')
 
+# Задание 5
+# fizbaz = []
+# for num in range(1,100):
+#     if num %15 == 0:
+#         fizbaz.append('FizBaz')
+#     elif num % 3 == 0:
+#         fizbaz.append('Fiz')
+#     elif num % 5 == 0:
+#         fizbaz.append('Baz')
+#     else:
+#         fizbaz.append(num)
+# print(*fizbaz)
 
+# fizbaz_gen = ('fizbaz' if num % 15 == 0 else
+#               'Fiz' if num % 5 == 0 else
+#               'Baz' if num % 5 == 0 else num 
+#               for num in range(1,100))
+# print(*fizbaz_gen)
 
+#Задание 6
 
 
