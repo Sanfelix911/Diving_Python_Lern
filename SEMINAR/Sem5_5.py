@@ -66,7 +66,28 @@
 #             for f_num in range(i_main, i_main + COLUMN))
 # print(*table_gen)      
 # 
-#Задание 7      
+#Задание 7
+
+# def is_prime(num: int):
+#     if num % 2 ==0 and num != 2:
+#         return False
+#     for div in range(3, int(num**0.5)+1):
+#         if num % div == 0:
+#             return False
+#     return True
+
+
+# def simple_gen(n: int):
+#     for numb in range(2, n+1):
+#         if is_prime(numb):
+#             yield numb
+
+# print(*simple_gen(20))
+
+
+
+
+       
 
             
 
