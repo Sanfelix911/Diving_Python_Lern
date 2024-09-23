@@ -36,9 +36,7 @@ if __name__ == "__main__":
     batch_rename_files("newfile", 3, "txt", "txt", [1, 3], r"D:\GB\2023\Training\Teh_Specialization\Diving_Python\7\HW7")
 
 
-# Файл 'Исходный тест3.txt' переименован в 'схnewfile001.txt'
-# Файл 'Тест исходный4.txt' переименован в 'есnewfile002.txt'
-# Файл 'Тест файл 2.txt' переименован в 'есnewfile003.txt'
-# Файл 'Файл тест1.txt' переименован в 'айnewfile004.txt'
-
-
+# Файл 'File hw4.txt' переименован в 'ilnewfile001.txt'
+# Файл 'File test1.txt' переименован в 'ilnewfile002.txt'
+# Файл 'Hw File4.txt' переименован в 'w newfile003.txt'
+# Файл 'Test file 2.txt' переименован в 'esnewfile004.txt'
